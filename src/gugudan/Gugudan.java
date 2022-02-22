@@ -38,10 +38,18 @@ public class Gugudan {
 		System.out.println("몇 단을 출력하시겠습니까? : ");
 		Scanner scanner = new Scanner(System.in);
 		int dan = scanner.nextInt();
+		System.out.println("사용자가 입력한 값: " + dan);
 		int i = 1;
+		
 		while (i <= 9) {
-			System.out.println(dan * i);
-			i += 1;
+			if (dan < 2 || dan > 9) {
+				System.out.println("잘못된 값을 입력하였습니다. 2~9까지의 숫자를 입력하세요.");
+				break;
+			}
+			else {
+				System.out.println(dan * i);
+				i += 1;
+			}
 		}
 	}
 }
