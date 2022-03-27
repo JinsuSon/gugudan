@@ -15,13 +15,9 @@ public class Gugudan{
 	}
 	
 	public static void main(String[] args) {
-		int [] result = calculate(2);
-		print(result);
-		
-		int[] times3 = calculate(3);
-		print(times3);
-		
-		int[] times4 = calculate(4);
-		print(times4);
+		for (int i = 2; i < 10; i++) {
+			int [] result = calculate(i);
+			print(result);
+		}
 	}
 }
